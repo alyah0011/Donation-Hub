@@ -1,0 +1,367 @@
+/*Remove white space (margin and padding) to the left of all elements*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*The background image*/
+body {
+  background-image: url(images/background.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*Start of header css*/
+.header {
+  align-items: left;
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  z-index: 5;
+}
+
+.header img {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 120px;
+  padding-right: 10px;
+}
+
+.header .text {
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.header .text h1 {
+  color: #61B15A;
+}
+
+.header .text p {
+  color: #6C7172;
+}
+/*End of header css*/
+
+/*Start of navigation bar css*/
+/*Sets the navigation bar position, color and width*/
+.navbar {
+  overflow: hidden;
+  background-color: #F4F8EC;
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  z-index: 6;
+}
+
+/*Removes the unordered list bullets and paddings and make it center*/
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/*Allows the nav items to be center*/
+.navbar ul li {
+  display: inline-block;
+}
+
+/*Sets the links properties*/
+.navbar a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+/*Sets the hover properties*/
+.navbar a:hover {
+  background: #EAF1DC;
+}
+/*End of navigation bar css*/
+
+/*Start of content css*/
+
+.content {
+margin-top: 200px;
+z-index: 1;
+width: 100%;
+flex-grow: 1;
+padding-bottom: 200px;
+
+}
+
+.faq-heading{
+  text-align:center;
+  width: 200px;
+  padding: 5px;
+  background-color: #ADCE74;
+  border-radius: 5px;
+  margin:0 auto;
+  border-bottom: 10px solid white;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 500px;
+  margin: auto;
+}
+.faq-page {
+    color: #444;
+    cursor: pointer;
+    padding:20px;
+    width: 500px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+   margin: auto;
+   width: 500px;
+   padding: auto;
+   color: black;
+}
+
+.faq-page {
+  background-color: #F4F8EC;
+}
+
+.faq-body {
+    padding: 0 18px;
+    background-color: #F4F8EC;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+.form{
+  margin: 0 auto;
+  width:500px;
+  padding: 20px;
+  background-color: #F4F8EC;
+  border: 1px solid #F4F8EC;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 12px;
+  margin:8px 0 auto;
+  display: inline-block;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #F4F8EC;
+}
+
+input[type=mail]{
+  width: 100%;
+  padding: 12px 12px;
+  margin:8px 0 auto;
+  display: inline-block;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #F4F8EC;
+}
+
+input[type=textarea]{
+  width:100%;
+  padding:5px;
+  border:1px solid black;
+  box-sizing:border-box;
+  border-radius: 32px;
+}
+
+.form button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color:#006400;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  font-family: sans-serif;
+  background-color: #fefefe;
+  margin: auto;
+  top: 300px;
+  padding: 0;
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+/* Modal Header */
+
+.modal-header h1 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.modal-header {
+  padding: 20px 16px;
+  color: grey;
+  text-align: center;
+
+}
+
+/* Modal Body */
+.modal-body {
+  text-align: center;
+  padding: 10px 16px;
+
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  color: grey;
+  font-size: 25px;
+  top: 5px;
+  right: 10px;
+  padding: 5px:
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.last-row{
+
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  z-index: 1;
+  height: 150px;
+
+}
+
+.last-column-left {
+  flex-basis: 480px;
+  flex-shrink: 0;
+  color: white;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom:20px;
+  background-color: #006400;
+
+
+}
+
+.line{
+  text-decoration: underline;
+
+}
+.last-column-right {
+  flex-basis: 100%;
+
+}
+
+#googlemap {
+
+  height: 100%;
+
+}
+/*End of content css*/
+
+/*Start of footer css*/
+.footer {
+  width: 100%;
+  bottom: 0;
+  background-color: #F4F8EC;
+}
+
+.footer .row {
+  display: flex;
+  width:100%;
+}
+
+.footer .column-left {
+  justify-content: flex-start;
+  padding: 5px;
+}
+.footer .column-right {
+  display: flex;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.footer #logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 40px;
+}
+
+.footer #text {
+  margin-top: 40px;
+  padding-left:50px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer .socials {
+  display: flex;
+  margin-left: 20px;
+}
+
+.footer .socials img {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+/*End of footer css*/

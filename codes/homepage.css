@@ -1,0 +1,653 @@
+/*Remove white space (margin and padding) to the left of all elements*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*The background image*/
+body {
+  background-image: url(images/background.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  height: 750px;
+}
+
+/*Start of header css*/
+.header {
+  display:flex;
+  align-items: left;
+  position: fixed;
+  background: white;
+  width: 100%;
+  z-index: 5;
+}
+
+.header img {
+  max-width: 120px;
+  padding-right: 10px;
+}
+
+.text {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.text h1 {
+  color: #61B15A;
+}
+
+.text p {
+  color: #6C7172;
+}
+/*End of header css*/
+
+/*Start of navigation bar css*/
+/*Sets the navigation bar position, color and width*/
+.navbar {
+  overflow: hidden;
+  background-color: #F4F8EC;
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  z-index: 6;
+}
+
+/*Removes the unordered list bullets and paddings and make it center*/
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/*Allows the nav items to be center*/
+.navbar ul li {
+  display: inline-block;
+}
+
+/*Sets the links properties*/
+.navbar a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+/*Sets the hover properties*/
+.navbar a:hover {
+  background: #EAF1DC;
+}
+/*End of navigation bar css*/
+
+
+/*Start of Slider css*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.texto {
+  color: #f2f2f2;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: Arial,Helvetica,sans-serif;
+  background-color:#61B15A;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*End of Slider CSS*/
+
+
+/*Start of Homepage Divider CSS*/
+/*Spread Love.Spread Kindness*/
+
+.intro h1 {
+  font-weight:550;
+  font-size:30px;
+  color:black;
+  font-family: "Catamaran",sans-serif;
+  line-height:1.2;
+  text-align:center;
+}
+
+.intro p {
+  color:#848484;
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 17px;
+  line-height:2.0;;
+  margin-top:0;
+  margin-bottom:1rem;
+  text-align:center;
+}
+
+article{
+   -webkit-flex: 3;
+   -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 100px;
+    position: relative;
+}
+
+.frame {
+   width: 90%;
+   margin: 40px auto;
+   text-align: center;
+}
+
+/*Button for JOIN US*/
+button {
+   margin: 20px;
+   outline: none;
+}
+
+.custom-btn {
+   width: 130px;
+   height: 40px;
+   padding: 10px 25px;
+   border: 2px solid #000;
+   font-family: 'Lato', sans-serif;
+   font-weight: 500;
+   background: transparent;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   display: inline-block;
+   position: relative;
+   bottom: 155px;
+   right:10px;
+}
+  
+.btn-1 {
+   background: #000;
+   color: #fff;
+   line-height: 42px;
+   padding: 0;
+   border: none;
+}
+
+.btn-1:hover {
+   background: transparent;
+   color: green;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+}
+
+.btn-1:before,
+.btn-1:after{
+   content:'';
+   position:absolute;
+   top:0;
+   right:0;
+   height:2px;
+   width:0;
+   background: green;
+   transition:400ms ease all;
+}
+
+.btn-1:after{
+   right:inherit;
+   top:inherit;
+   left:0;
+   bottom:0;
+}
+
+.btn-1:hover:before,
+.btn-1:hover:after{
+   width:100%;
+   transition:800ms ease all;
+}
+
+/* Style Gain More Than Just Joining */
+.benefits {
+   background-color: #61B15A;
+   padding: 70px;
+   position: relative;
+   bottom: 160px;
+}
+
+.benefits h1 {
+   font-weight:550;
+   font-size:30px;
+   color:white;
+   font-family: "Catamaran",sans-serif;
+   line-height:1.2;
+   text-align:center;
+}
+
+.benefits p {
+   color:black;
+   font-family: "Source Sans Pro",sans-serif;
+   font-size: 20px;
+   line-height:1.65;
+   text-align:center;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  padding-top: 10px;
+  height:300px;
+  border-radius: 8px 0px 0px;
+  font-family: "Source Sans Pro",sans-serif;
+  text-align: justify;
+}
+
+.column1 p{
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  padding-top: 10px;
+  height:300px;
+  border-radius: 0px 0px 8px;
+  font-family: "Source Sans Pro",sans-serif;
+  text-align: justify;
+}
+
+.column2 p{
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+/* Clear floats after the columns */
+.specific:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.vl {
+  border-left: 6px solid green;
+  border-radius: 5px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 40%;
+}
+
+/* Style for Checkout our Collaborators*/
+.collaborators {
+   background-color: white;
+   padding: 70px;
+   position: relative;
+   bottom: 160px;
+}
+
+.collaborators h1 {
+   font-weight:550;
+   font-size:20px;
+   color:black;
+   font-family: "Catamaran",sans-serif;
+   line-height:1.2;
+   text-align:center;
+}
+
+.tm-img-wrap {
+   position: relative;
+   bottom: 200px; 
+}
+
+.tm-img-wrap a {
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   padding: 10px;
+   width: 180px;
+   height: 100px;
+}
+
+.column {
+   float: left;
+   width: 15%;
+   padding: 0px;
+   left: 20%
+}
+
+/* Clear floats after image containers */
+.row::after {
+   content: "";
+   clear: both;
+   display: table;
+}
+
+/* Style for Rounded Divider */
+hr.rounded {
+   border-top: 5px solid #61B15A;
+   border-radius: 2px;
+   width:150px;
+   position: relative;
+   left: 44%;
+   bottom: 150px;
+}
+
+
+/*Style for Testimonials CSS*/
+.testimony {
+   position: relative;
+   bottom: 60px;
+}
+
+.testimony h1 {
+   font-weight:600;
+   font-size:34px;
+   color:#61B15A;
+   font-family: "Catamaran",sans-serif;
+   line-height:1.2;
+   text-align:center;
+}
+
+.testimony p {
+   color:#848484;
+   font-family: "Source Sans Pro",sans-serif;
+   font-size: 15px;
+   line-height:2.0;
+   margin-top:0;
+   margin-bottom:1rem;
+   text-align:center;
+}
+
+/* Images for Testimonials*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+figure.snip1390 {
+   font-family: 'Roboto', Arial, sans-serif;
+   position: relative;
+   overflow: hidden;
+   margin: 5px;
+   min-width: 200px;
+   max-width: 300px;
+   width: 100%;
+   color: #000000;
+   text-align: center;
+   font-size: 16px;
+   background-color: #848B79;
+   padding: 30px;
+   background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   float:left;
+   bottom: 140px;
+   left: 20%;
+
+}
+figure.snip1390 *,
+figure.snip1390 *:before,
+figure.snip1390 *:after {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   -webkit-transition: all 0.35s ease;
+   transition: all 0.35s ease;
+}
+
+figure.snip1390 figcaption {
+   width: 100%;
+}
+figure.snip1390 h2,
+figure.snip1390 h4,
+figure.snip1390 blockquote {
+   margin: 0;
+}
+figure.snip1390 h2,
+figure.snip1390 h4 {
+   font-weight: 300;
+}
+figure.snip1390 h2 {
+   color: #ffffff;
+}
+figure.snip1390 h4 {
+   color: #a6a6a6;
+}
+figure.snip1390 blockquote {
+   font-size: 1em;
+   padding: 45px 20px 40px 50px;
+   margin-top: 30px;
+   background-color: #ffffff;
+   border-radius: 5px;
+   box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+   text-align: left;
+   position: relative;
+}
+figure.snip1390 blockquote:before {
+   font-family: 'FontAwesome';
+   content: "\201C";
+   position: absolute;
+   font-size: 70px;
+   opacity: 0.25;
+   font-style: normal;
+   top: 0px;
+   left: 20px;
+}
+figure.snip1390 .profile {
+   width: 100px;
+   border-radius: 50%;
+   display: inline-block;
+   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+   margin-bottom: 10px;
+   border: solid 5px #A6A57A;
+}
+
+/*Style for Auto Counter*/
+.numeric {
+   background-color: white;
+   padding: 5px;
+   position: relative;
+   width:100%;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   bottom: 30px;
+   
+}
+
+.numeric h1 {
+   font-weight:550;
+   font-size:30px;
+   color:#848B79;
+   font-family: "Catamaran",sans-serif;
+   line-height:1.2;
+   text-align:center;
+}
+
+.calculator {
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.counters {
+	background: #61B15A;
+	color: #fff;
+	padding: 80px 20px;
+	border-top: 3px #61B15A solid;    
+}
+
+.counters .calculator {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	text-align: center;
+}
+
+.counters i {
+	color: lightskyblue;
+	margin-bottom: 5 px;
+}
+
+.counters .counter {
+	font-size: 45px;
+	margin: 10px 0;
+      font-family: "Catamaran",sans-serif;
+}
+
+@media (max-width: 700px) {
+	.counters .calculator {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.counters .calculator > div:nth-of-type(1),
+	.counters .calculator > div:nth-of-type(2) {
+		border-bottom: 1px lightskyblue solid;
+		padding-bottom: 20px;
+	}
+}
+
+/*End of Homepage Divider css*/
+
+/*Start of footer css*/
+.footer {
+  width: 100%;
+  bottom: 0;
+  background-color: #F4F8EC;
+}
+
+ 
+
+.footer .row {
+  display: flex;
+  width: 100%;
+}
+
+ 
+
+.footer .column-left {
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+ 
+
+.footer .column-right {
+  display: flex;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+ 
+
+.footer #logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 40px;
+}
+
+ 
+
+.footer #text {
+  margin-top: 40px;
+  padding-left: 50px;
+}
+
+ 
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+ 
+
+.footer .socials {
+  display: flex;
+  margin-left: 20px;
+}
+
+ 
+
+.footer .socials img {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+/*End of footer css*/

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalogue</title>
+  <style>
+    /*Remove white space (margin and padding) to the left of all elements*/
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+    /*The background image*/
+    body {
+      background-image: url(images/background.svg);
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+
+
+    /*Start of header css*/
+    .header {
+      align-items: left;
+      top: 0;
+      background: white;
+      width: 100%;
+      z-index: 5;
+    }
+
+
+
+    .header img {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 120px;
+      padding-right: 10px;
+    }
+
+
+
+    .header .text {
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+
+
+    .header .text h1 {
+      color: #61B15A;
+    }
+
+
+
+    .header .text p {
+      color: #6C7172;
+    }
+    /*End of header css*/
+
+
+
+    /*Start of navigation bar css*/
+    /*Sets the navigation bar position, color and width*/
+    .navbar {
+      overflow: hidden;
+      background-color: #F4F8EC;
+      top: 100px;
+      width: 100%;
+      z-index: 6;
+    }
+
+
+
+    /*Removes the unordered list bullets and paddings and make it center*/
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+
+
+    /*Allows the nav items to be center*/
+    .navbar ul li {
+      display: inline-block;
+    }
+
+
+
+    /*Sets the links properties*/
+    .navbar a {
+      float: left;
+      color: #000000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: underline;
+      font-size: 17px;
+    }
+
+
+
+    /*Sets the hover properties*/
+    .navbar a:hover {
+      background: #EAF1DC;
+    }
+    /*End of navigation bar css*/
+
+
+
+    /*Start of content css*/
+    .main {
+      margin-top: 30px;
+      z-index: 1;
+      width: 100%;
+      flex-grow: 1;
+      padding-bottom: 50px;
+    }
+
+
+
+    .left-column {
+      float: left;
+      width: 50%;
+    }
+
+
+
+    .right-column {
+      float: right;
+      width: 50%;
+    }
+
+    /*Start the content of catalogue css*/
+      h2
+        {
+          text-align: center;
+          padding: 10px;
+          background-color: #ADCE74;
+          border-top-left-radius: 25px;
+          border-top-right-radius: 25px;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: large;
+          width: 695px;
+          height: 30px;
+        }
+        table
+        {
+          margin: auto;
+          width: 714px;
+          height: 500px;
+          text-align: center;
+          padding: 10px;
+          border: 1px solid #F4F8EC;
+          border-collapse: collapse;
+          color: #696969;
+          text-align: center;
+        }
+        table, th, td
+        {
+         background-color: #F4F8EC;
+          border: 1px solid ;
+        }
+
+  /*Start of footer css*/
+.footer {
+  width: 100%;
+  bottom: 0;
+  background-color: #F4F8EC;
+}
+
+
+
+.footer .row {
+  display: flex;
+  width: 100%;
+}
+
+
+
+.footer .column-left {
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+
+
+.footer .column-right {
+  display: flex;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+
+
+.footer #logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 40px;
+}
+
+
+
+.footer #text {
+  margin-top: 40px;
+  padding-left: 50px;
+}
+
+
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.footer .socials {
+  display: flex;
+  margin-left: 20px;
+}
+
+
+
+.footer .socials img {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+/*End of footer css*/
+
+    </style>
+
+  </head>
+  <body>
+    <!--Header starts here-->
+    <div class="header">
+      <img src="images/Logo.png" alt="Donation Hub Logo">
+    <div class="text">
+      <h1>Donation Hub</h1>
+      <p>Spread hands for love</p>
+    </div>
+  </div>
+  <!--Header ends here-->
+
+  <!--Navigation bar starts here-->
+  <div class="navbar">
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+      <li><a href="registration.html">Volunteer</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <!--Navigation bar ends here-->
+  </div>
+
+
+  <div class="main">
+    <center>
+      <form action ="Catalogue" method="post"></form>
+      <h2>Catalogue</h2>
+    </center>
+      <table>
+        <tr>
+          <th>Donated Item</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td><img src="images/Water.jpg" alt="Kid's Milk" width="100" height="100"></td>
+          <td>Donator: Siti Maryam<br>Amount: 24 bottle<br>For: Fundraising Event</td>
+        </tr>
+        <tr>
+          <td><img src="images/Rice.jpg" alt="Rice" width="100" height="100"></td>
+          <td>Donator: Zakiah binti Daud<br>Amount: 50 pack<br>For: November Charity Event</td>
+        </tr>
+        <tr>
+          <td><img src="images/Milk.jpg" alt="Kid's Milk" width="100" height="100"></td>
+          <td>Donator: Aiman Faris<br>Amount: 2 pack<br>For: Nur Alina binti Abdullah </td>
+        </tr>
+        <tr>
+          <td><img src="images/Clothes.jpg" alt="Clothes" width="100" height="100"></td>
+          <td>Donator: Ain Wahida<br>Amount: 12 pieces<br>For: Rogayah binti Sabri </td>
+        </tr>
+      </table>
+  </div>
+
+  <!--Footer starts here-->
+  <div class="footer">
+    <footer>
+      <div class="row">
+        <div class="column-left">
+          <img id="logo" src="images/Logo.png" alt="donation hub logo">
+        </div>
+        <div class="column-right">
+          <p id="text"><a href="homepage.html">Home</a></p>
+          <p id="text"><a href="events.html">Events</a></p>
+          <p id="text"><a href="catalogue.html">Catalogue</a></p>
+          <p id="text"><a href="registration.html">Volunteer</a></p>
+          <p id="text"><a href="contact.html">Contact Us</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="socials">
+          <img src="images/facebook.png" alt="facebook icon">
+          <img src="images/youtube.png" alt="youtube icon">
+          <img src="images/twitter.png" alt="twitter icon">
+          <img src="images/instagram.png" alt="instagram icon">
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!--Footer ends here-->
+</body>
+</html>

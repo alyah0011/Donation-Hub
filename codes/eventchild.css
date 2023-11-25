@@ -1,0 +1,189 @@
+/*Remove white space (margin and padding) to the left of all elements*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*The background image*/
+body {
+  background-image: url(images/background.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*Start of header css*/
+.header {
+  align-items: left;
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  z-index: 5;
+}
+
+.header img {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 120px;
+  padding-right: 10px;
+}
+
+.header .text {
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.header .text h1 {
+  color: #61B15A;
+}
+
+.header .text p {
+  color: #6C7172;
+}
+/*End of header css*/
+
+/*Start of navigation bar css*/
+/*Sets the navigation bar position, color and width*/
+.navbar {
+  overflow: hidden;
+  background-color: #F4F8EC;
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  z-index: 6;
+}
+
+/*Removes the unordered list bullets and paddings and make it center*/
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/*Allows the nav items to be center*/
+.navbar ul li {
+  display: inline-block;
+}
+
+/*Sets the links properties*/
+.navbar a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+/*Sets the hover properties*/
+.navbar a:hover {
+  background: #EAF1DC;
+}
+/*End of navigation bar css*/
+
+/*Start of content css*/
+.main {
+  margin-top: 200px;
+  z-index: 1;
+  width: 100%;
+  flex-grow: 1;
+  padding-bottom: 50px;
+}
+
+.event-images {
+  padding-bottom: 50px;
+}
+
+.event-images img {
+  margin-left: 15%;
+  width: 75%;
+  height: 350px;
+  border-radius: 25px;
+  object-fit: fill;
+}
+
+.events {
+  margin-left: 15%;
+  width: 75%;
+}
+
+.events .head-details {
+  padding: 30px;
+  background-color: #F4F8EC;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.events h2 {
+  font-family: sans-serif;
+}
+
+.events .body-details {
+  padding: 20px;
+  background-color: #F4F8EC;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.events .body-details p {
+  padding: 10px;
+  font-family: sans-serif;
+}
+/*End of content css*/
+
+/*Start of footer css*/
+.footer {
+  width: 100%;
+  bottom: 0;
+  background-color: #F4F8EC;
+}
+
+.footer .row {
+  display: flex;
+  width: 100%;
+}
+
+.footer .column-left {
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+.footer .column-right {
+  display: flex;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.footer #logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 40px;
+}
+
+.footer #text {
+  margin-top: 40px;
+  padding-left: 50px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer .socials {
+  display: flex;
+  margin-left: 20px;
+}
+
+.footer .socials img {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+/*End of footer css*/

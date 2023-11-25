@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" charset="utf-8">
+    <title>Volunteer</title>
+    <link rel="stylesheet" href="registration.css">
+  </head>
+  <body>
+    <!--Header starts here-->
+    <div class="header">
+        <img src="images/Logo.png" alt="Donation Hub Logo">
+      <div class="text">
+        <h1>Donation Hub</h1>
+        <p>Spread hands for love</p>
+      </div>
+    </div>
+    <!--Header ends here-->
+
+    <!--Navigation bar starts here-->
+    <div class="navbar">
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="registration.html">Volunteer</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <!--Navigation bar ends here-->
+
+
+    <!--Main content starts here-->
+    <div class="main">
+      <div class="left-column">
+        <div class="form">
+
+          <h3>Volunteer with Us!</h3>
+          <br>
+          <p>Our volunteers are our critical partners in helping us <br>
+            ensure the needy are not forgotten. At The Donation <br>
+            Hub, you can play an active role in caring and <br>
+            enriching the lives of children, youths, the elderly<br>
+            and families we serve. Help us make a difference!</p>
+            <br>
+            <br>
+
+          <div>
+            <label for "Name"> </label>
+            <input type = "text" id = "Name" name = "Name" placeholder= "Name">
+          </div>
+            <br>
+
+            <div>
+              <label for "email"> </label>
+              <input type = "text" id = "email" name = "email" placeholder = "Email Address">
+            </div>
+              <br>
+
+              <div>
+                <label for "mobile number"></label>
+                <input type = "text" id = "mobile number" name = "Mobile Number" placeholder = "Mobile Number">
+              </div>
+                <br>
+                <br>
+
+              <div class = "sign up button">
+                <button id="myBtn">Submit</button>
+              </div>
+
+        <!-- The Modal -->
+        <div id="registered" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h1>SUCCESSFUL</h1>
+            </div>
+            <div class="modal-body">
+              <p>Your registration was successful.</p>
+              <br>
+              <p>Thank you for choosing us!</p>
+              <br>
+            </div>
+          </div>
+
+        </div>
+
+        <!--Modal Javascript-->
+        <script>
+          // Get the modal
+          var modal = document.getElementById("registered");
+
+          // Get the button that opens the modal
+          var btn = document.getElementById("myBtn");
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          // When the user clicks on the button, open the modal
+          btn.onclick = function() {
+            modal.style.display = "block";
+          }
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+        </script>
+
+      </div>
+
+    </div>
+
+    <div class="right-column">
+    <div class = "video">
+      <iframe width="420" height="240" src="https://www.youtube.com/embed/tYmvsrkN8po" title="YouTube video player"
+      frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    </div>
+
+    <div class= "details">
+
+      <h3>Process</h3>
+      <br>
+      <p>As easy as filling the Volunteer form in the Volunteer page <br>
+      and receive emails on upcoming events available for <br>
+      volunteering. </p>
+      <br>
+
+      <h3>Benefits</h3>
+      <br>
+      <ul>
+          <li>Learn new skills</li>
+          <li>Meet new people</li>
+          <li>Be a part of the community</li>
+          <li>Make a difference!</li>
+        </ul>
+    </div>
+    </div>
+  </div>
+
+
+    <!--Main content ends here-->
+
+    <!--Footer starts here-->
+    <div class="footer">
+      <footer>
+        <div class="row">
+          <div class="column-left">
+            <img id="logo" src="images/Logo.png" alt="donation hub logo">
+          </div>
+          <div class="column-right">
+            <p id="text"><a href="homepage.html">Home</a></p>
+            <p id="text"><a href="events.html">Events</a></p>
+            <p id="text"><a href="catalogue.html">Catalogue</a></p>
+            <p id="text"><a href="registration.html">Volunteer</a></p>
+            <p id="text"><a href="contact.html">Contact Us</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="socials">
+            <img src="images/facebook.png" alt="facebook icon">
+            <img src="images/youtube.png" alt="youtube icon">
+            <img src="images/twitter.png" alt="twitter icon">
+            <img src="images/instagram.png" alt="instagram icon">
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--Footer ends here-->
+
+  </body>
+</html>
