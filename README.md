@@ -29,6 +29,7 @@ c. Catalogue
 - Collection of information for the process of donation.
 - Choosing items to be donated in the catalogue.
 - Submission of form.
+  
 ![image2](https://github.com/alyah0011/Donation-Hub/assets/121216138/72cae183-332b-439f-8a21-b817b9bdf04c)
 
 d. Registration:
